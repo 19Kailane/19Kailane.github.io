@@ -1,80 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cidade</title>
     <style>
+        .fotografias {
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+             
+            background: rgb(37, 19, 37);
 
+        }
 
-.fotografias {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-gap: 20px;
-}
+        .fotografias img {
+            width: 200px;
+            border-radius: 30px;
 
-.fotografias img {
-width: 200px;
-border-radius: 30px;
-} 
-
-    </style>z
+        }
+    </style>           
 </head>
 
 <body>
     <header>
-        <h1>Lisboa</h1>
-        <a href="home">home</a>
-        <a href="Localização">Localização</a>
-        <a href="Multimedia">Multimedia</a>
+        <h1>Rio de Janeiro</h1>
+        <a href="info.html">home</a>
+        <a href="local.html">Localização</a>
+        <a href="multimedia.html">Multimedia</a>
         <a href="Informação">Informação</a>
-     
+
         <main>
-        <h2>Multimedia</h2>
-        <p>Nesta pagina encontra conteúdos multimedia</p>
-        <p>
-          <a href="#Fotografias">Fotografias</a>
-          <a href="#video">video</a>
-          <a href="#Poesia">Poesia</a>
-        </p>
+            <h2>Multimedia</h2>
+            <p>Nesta pagina encontra conteúdos multimedia</p>
+            <p>
+                <a href="#fotografias">fotografias</a>
+                <a href="#video">video</a>
+                <a href="#Poesia">Poesia</a>
+            </p>
 
-    <section>
-     <h3 id="Fotografias">Fotografias</h3>
+            <section>
+                <h3 id="fotografias">Fotografias</h3>
 
-    <div class="Fotografias">
-    <img src="Images_1x1.jpeg" alt="Rio de Janeiro">
-    <img src="Images_1x2.jpeg" alt="Veneza">
-    <img src="Images_1x3.jpeg" alt="kyoto">
-    <img src="Images_1x4.jpeg" alt="cidade do cabo">
-    <img src="Images_1x5.jpeg" alt="Cairo">
-    <img src="Images_1x6.jpeg" alt="Hoi An">
-    <img src="Images_1x7.jpeg" alt="Sydeney">
-    <img src="Images_1x8.jpeg" alt="cidade do México">
+                <div class="fotografias">
+                    <img src="Images_1x1.jpeg" alt="Rio de Janeiro">
+                    <img src="Images_1x2.jpeg" alt="Veneza">
+                    <img src="Images_1x3.jpeg" alt="kyoto">
+                    <img src="Images_1x4.jpeg" alt="cidade do cabo">
+                    <img src="Images_1x5.jpeg" alt="Cairo">
+                    <img src="Images_1x6.jpeg" alt="Hoi An">
+                    <img src="Images_1x7.jpeg" alt="Sydeney">
+                    <img src="Images_1x8.jpeg" alt="cidade do México">
+                </div>
 
-</div>
+                <h3 id="video">Video</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UOnRbXtbeo8?si=WxoP8U4FtX8pS43e"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; 
+    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<h3 id="video">Video</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/UOnRbXtbeo8?si=WxoP8U4FtX8pS43e" title="YouTube video player" frameborder="0" allow="accelerometer; 
-    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-   
-    <h3 id="Poesia">Poesia</h3>
-    <div>
-      <p>Na curva da serra, a cidade desperta</p>
-      <p>O sol se derrama na praia deserta,</p>
-      <p>E o mar que balança em tom aventureiro,</p>
-      <p>Canta segredos do Rio de Janeiro.</p>
+                <h3 id="Poesia">Poesia</h3>
+                <div>
+                    <p>Na curva da serra, a cidade desperta</p>
+                    <p>O sol se derrama na praia deserta,</p>
+                    <p>E o mar que balança em tom aventureiro,</p>
+                    <p>Canta segredos do Rio de Janeiro.</p>
 
-      <p>O Pão de Açúcar se ergue imponente,</p>
-      <p>Guardiã de histórias, de um povo contente,</p>
-      <p>Enquanto o Cristo, de braços abertos,</p>
-      <p>Acolhe destinos, amores incertos.</p>
+                    <p>O Pão de Açúcar se ergue imponente,</p>
+                    <p>Guardiã de histórias, de um povo contente,</p>
+                    <p>Enquanto o Cristo, de braços abertos,</p>
+                    <p>Acolhe destinos, amores incertos.</p>
 
-    </div>
-    
-     </section>
-      </main>
-      </header>
-     
+                </div>
+
+            </section>
+        </main>
+    </header>
+
 </body>
+
 </html>
