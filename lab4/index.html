@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+
+
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+           
+        }
+        h1 {
+            color: #161515;
+            cursor: pointer;
+            
+        
+        }
+        h1:hover{
+            color: rgb(46, 42, 165);
+        }
+        p {
+            font-size: 25px;
+            
+        }
+       
+        
+        button {
+            padding: 10px 15px;
+            background-color: #cfd4d8;
+            color: rgb(12, 12, 12);
+            border: none;
+            border-radius: 14px;
+            cursor: pointer;
+            
+        }
+        button:hover {
+            background-color: chartreuse ;
+        }
+        input{
+            padding: 10px 15px;
+            background-color: red;
+            color: rgb(12, 12, 12);
+            border: none;
+            border-radius: 14px;
+            cursor: pointer;
+            
+        }
+    </style>
+
+<script>
+    let counter = 0;
+    const h1 = docu
+    function count() {
+        counter++;
+        alert("Button clicked " + counter + " times");
+    }
+    function color(){
+        p.textContent = input.value;
+        p.style.backgroundColor = inputCor.value;
+        input.onkeyup = colorir;
+        }
+    
+    function count() {
+        counter++;
+        p.textContent ='contagem vai em ' + counter;
+    }
+    function realca(){
+        p.style.fontWeight = 'blue';
+        backgroundColor = 'yellow';
+    }
+    function input(){
+        p.textContent = input.value;
+        p.style.backgroundColor = inputCor.value;
+        input.onkeyup = colorir;
+        color("red")
+        
+    }
+    function escrever(){
+        backgroundColor = 'yellow';
+    }
+
+</script>
+   
+       
+</head>
+
+<body>
+    <h1>Bem vindo a minha pagina!</h1>
+    <p>2.Pinta-me! <button onclick="count()">Red</button>
+        <button mouseover="count()">Green</button> 
+        <button mouseout="count()">Blue</button>
+
+   </p> 
+   <p>3.Experimenta escrever <input type="text" id="inputField" oninput="updateText()">
+    <span id="displayText"></span>
+   </p>
+   <p>4.Escolha uma ocr em inglês  <input type="text" id="ocrInput" oninput="translateText()">
+    <span id="translatedText"></span>
+    </p>
+    <p>5 <button onclick="count()">conta!</button>
+        30</p>
+</body>
+</html>
