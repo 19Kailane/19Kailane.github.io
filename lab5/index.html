@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background: palegoldenrod;
+        }
+
+        body p {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="passa">1.passe por aqui</p>
+    <script src="script.js"></script>  
+
+    <section> 
+    <p id="pinta">2.Pinta-me! </p>
+          
+        <button id = "red">red</button>
+        <button id = "blue"> Blue</button> 
+       <but id ="green"</but"/button>
+    
+     
+</section>
+      <script>
+
+        const frase = document.queryselector("#pinta");
+
+        pintaBlue = function(){
+            frase.style.color = "blue"
+        }
+        document.querySelector("#blue").onclick = pintaBlue()
+        document.querySelector("#green").onclick = () =>(frase.style.color = "green") 
+        document.querySelector("#red").onclick = () =>(frase.style.color = "red")
+      </script>
+
+      <section id = "escreve">
+        <label for="colorir">3. Experimenta escrever....</label>
+        <input id="colorir" type="text">
+      </section>
+
+      <script>
+        const inputcolorir = document.querySelector("#escreve input")
+        const cores = ["red", "blue", "green"]
+        let iterador = 0;
+
+        function colorir(){
+            inputcolorir.style.background = cores[iterador] 
+            iterador= ++iterador % cores.length;
+        }
+        inputcolorir.oninput = colorir
+      </script>
+
+      <section id="escolher">
+        <label for="4.Escolha uma cor em inglês:">4.Escolha uma cor em inglês:</label>
+        <input type="text" id="cor">
+        <button>submeter</button>
+
+      </section>
+
+      <script>
+        input = document.querySelector("#escolher input")
+        button = document.querySelector("#escolher button")
+
+        function colorirfundo(){
+            document.querySelector("body").style.background = input.value;
+        }
+
+        button.onclick = colorirfundo
+      </script>
+
+      <section id ="contador">
+        <p>5.<button>conta!</button> <span></span></p>
+      </section>
+      <script>
+        let contagem = 0
+        const elementoContagem = document.querySelector("#contador span")
+
+        function contar(){
+            elementoContagem.textContent = ++contagem;
+
+        }
+        document.querySelector("#contador button").onclick = contar
+      </script>
+
+</body>
+</html>
