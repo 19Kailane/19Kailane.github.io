@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background: palegoldenrod;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    body p {
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <p id="passa">1. Passe por aqui</p>
+
+  <section> 
+    <p id="pinta">2. Pinta-me!</p>
+    <button id="red">Red</button>
+    <button id="blue">Blue</button>
+    <button id="green">Green</button>
+  </section>
+
+  <script>
+    const frase = document.querySelector("#pinta");
+
+    document.querySelector("#blue").onclick = () => frase.style.color = "blue";
+    document.querySelector("#green").onclick = () => frase.style.color = "green";
+    document.querySelector("#red").onclick = () => frase.style.color = "red";
+  </script>
+
+  <section id="escreve">
+    <label for="colorir">3. Experimenta escrever....</label>
+    <input id="colorir" type="text">
+  </section>
+
+  <script>
+    const inputcolorir = document.querySelector("#colorir");
+    const cores = ["red", "blue", "green"];
+    let iterador = 0;
+
+    function colorir() {
+      inputcolorir.style.background = cores[iterador];
+      iterador = ++iterador % cores.length;
+    }
+    inputcolorir.oninput = colorir;
+  </script>
+
+  <section id="escolher">
+    <label for="cor">4. Escolha uma cor em inglês:</label>
+    <input type="text" id="cor">
+    <button>Submeter</button>
+  </section>
+
+  <script>
+    const input = document.querySelector("#cor");
+    const button = document.querySelector("#escolher button");
+
+    function colorirfundo() {
+      document.body.style.background = input.value;
+    }
+
+    button.onclick = colorirfundo;
+  </script>
+
+  <section id="contador-manual">
+    <p>5. <button>Conta!</button> <span></span></p>
+  </section>
+
+  <script>
+    let contagem = 0;
+    const elementoContagem = document.querySelector("#contador-manual span");
+
+    function contar() {
+      elementoContagem.textContent = ++contagem;
+    }
+    document.querySelector("#contador-manual button").onclick = contar;
+  </script>
+
+  <form id="formulario">
+    <label>6.</label>
+    <input type="text" id="nome" name="nome" placeholder="Nome" required>
+    <input type="number" id="idade" name="idade" placeholder="Idade" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="mensagem"></p>
+
+  <script>
+    const formulario = document.getElementById('formulario');
+    const mensagem = document.getElementById('mensagem');
+
+    formulario.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const nome = document.getElementById('nome').value.trim();
+      const idade = document.getElementById('idade').value.trim();
+
+      if (nome && idade) {
+        mensagem.textContent = `Olá, o ${nome} tem ${idade}!`;
+      } else {
+        mensagem.textContent = '';
+      }
+    });
+  </script>
+
+  <section id="contador-auto">
+    <p>7. Automatic Counter: <span id="auto-numero">0</span></p>
+  </section>
+
+  <script>
+    let numero = 0;
+    const autoSpan = document.getElementById("auto-numero");
+
+    setInterval(() => {
+      numero++;
+      autoSpan.textContent = numero;
+    }, 1000);
+  </script>
+
+</body>
+</html>

@@ -16,3 +16,10 @@ p.onmouseover = trocafrase;
 p.addEventListener('mouseout', repoefrase);{
 
 }
+function hello(name){
+    return "Hello "+ name;
+}
+
+
+  
+
