@@ -1,66 +1,54 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f4f4f4;
+/* ================= CUPOM E FINALIZAR ================= */
+#cupom-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 0.5rem;
 }
 
-header {
+#cupom {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+.btn-cupom,
+.btn-finalizar {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
   background-color: #f30d7c;
   color: white;
-  padding: 10px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
 }
 
-h1 {
-  margin: 0;
+.btn-cupom:hover,
+.btn-finalizar:hover {
+  background-color: #e7e4e9;
+  color: black;
 }
 
-nav {
-  text-align: right;
-}
-
-nav a {
+/* ================= FOOTER ================= */
+footer {
+  background-color: #f30d7c;
   color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #fff;
   text-decoration: none;
   margin: 0 10px;
 }
 
-.produtos-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 15px;
-  padding: 20px;
+footer a:hover {
+  text-decoration: underline;
 }
 
-.produto {
-  background-color: white;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: center;
-}
 
-.produto img {
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
-}
-
-button {
-  background-color: #f30d7c;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: #d5096b;
-}
-
-#cesto {
-  background: white;
-  margin: 20px;
-  padding: 15px;
-  border-radius: 10px;
-}

@@ -1,11 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>loja parte 2</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <header>
+    <h1>Loja</h1>
+    <nav>
+      <a href="#lista-produtos">Produtos</a>
+      <a href="#cesto">Cesto</a>
+    </nav>
+  </header>
+
+  <main>
+   
+    <section id="filtros">
+      <label for="categoria">Filtrar:</label>
+      <select id="categoria">
+        <option value="todas">Todas as categorias</option>
+        <option value="men's clothing">Roupas masculinas</option>
+        <option value="women's clothing">Roupas femininas</option>
+        <option value="jewelery">Joias</option>
+        <option value="electronics">Eletrônicos</option>
+      </select>
+
+      <label for="ordenar">Ordenar:</label>
+      <select id="ordenar">
+        <option value="nenhum">Sem ordenação</option>
+        <option value="preco-crescente">Preço crescente</option>
+        <option value="preco-decrescente">Preço decrescente</option>
+      </select>
+
+      <label for="pesquisa">Procurar:</label>
+      <input type="search" id="pesquisa" placeholder="Procurar produto...">
+    </section>
+
+   
+    <section id="produtos">
+      <h2>Produtos disponíveis</h2>
+      <div id="lista-produtos" class="produtos-container"></div>
+    </section>
+
+ 
+    <section id="cesto">
+      <h2>Produtos-Selecionados</h2>
+      <div id="cesto-produtos"></div>
+      <p id="preco-total">Preço total: R$ 0,00</p>
+    </section>
+  </main>
+
+  
+  <script type="module" src="main.js"></script>
 </body>
+
 </html>

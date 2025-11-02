@@ -1,4 +1,5 @@
 export const produtos = [
+
   {
     "id": 1,
     "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -240,3 +241,4 @@ export const produtos = [
     }
   }
 ]
+window.produtos = produtos;
