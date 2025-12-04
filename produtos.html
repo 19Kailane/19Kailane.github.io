@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  
+  background: lightblue;
+}
+    </style>
+</head>
+
+<body>
+    <h1>Produtos</h1>
+
+    <script>
+
+        const ul = document.querySelectorAll
+        let Produtos = []
+
+        //fetch de dados
+
+    fetch('https://deisishop.pythonanywhere.com/products/')
+      .then(response => response.jason())
+      .then(data=>{
+        produtos = data
+        mostrarProdutos(produtos)
+      })
+
+      //funcoes auxiliares
+
+      function mostrarProdutos(lista){
+    lista
+    .filter(produtos => produtos.category === 'T-shirts')
+    .forEach (produto => {
+        const li = document.createElement('li')
+        li.innerHTML = '$ {produtos.title} <button>rate?</button>'
+        ul.appendChild(li)
+
+        const botao = li.querySelector
+
+    })
+ }
+      
+    
+
+    mostar,filtrar, ordenar estudar bem isso
+
+
+
+    </script>
+</body>
+</html>

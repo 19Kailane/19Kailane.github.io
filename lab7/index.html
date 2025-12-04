@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <h1>Loja</h1>
+    <h1>Loja DeisiShop</h1>
     <nav>
       <a href="#lista-produtos">Produtos</a>
       <a href="#cesto">Cesto</a>
@@ -16,15 +16,14 @@
   </header>
 
   <main>
-   
+    <!-- FILTROS -->
     <section id="filtros">
       <label for="categoria">Filtrar:</label>
       <select id="categoria">
         <option value="todas">Todas as categorias</option>
-        <option value="men's clothing">Roupas masculinas</option>
-        <option value="women's clothing">Roupas femininas</option>
-        <option value="jewelery">Joias</option>
-        <option value="electronics">Eletrônicos</option>
+        <option value="men's clothing">T-shirts</option>
+        <option value="women's clothing">Canecas</option>
+        <option value="jewelery"> Meias</option>
       </select>
 
       <label for="ordenar">Ordenar:</label>
@@ -38,22 +37,28 @@
       <input type="search" id="pesquisa" placeholder="Procurar produto...">
     </section>
 
-   
+    <!-- PRODUTOS -->
     <section id="produtos">
       <h2>Produtos disponíveis</h2>
       <div id="lista-produtos" class="produtos-container"></div>
     </section>
 
- 
+     <!-- CESTO -->
     <section id="cesto">
-      <h2>Produtos-Selecionados</h2>
+      <h2>Produtos Selecionados</h2>
       <div id="cesto-produtos"></div>
-      <p id="preco-total">Preço total: R$ 0,00</p>
+      <p id="preco-total">Preço total: € 0,00</p>
     </section>
   </main>
 
-  
-  <script type="module" src="main.js"></script>
+  <!-- IMPORTANTE: carregar jQuery e o JS -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="main.js"></script>
 </body>
-
 </html>
+
+
+  
+  
+  
+

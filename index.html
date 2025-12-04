@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Meus Laboratórios</title>
+  <!-- Estilo embutido: copie para styles.css se preferir ficheiro separado -->
+  <style>
+    :root{
+      --bg:#e02ed7; /* tom escuro */
+      --card:#0b1220;
+      --muted:#6d3753;
+      --accent:#6ee7b7;
+      --glass: rgba(255,255,255,0.03);
+      --radius:12px;
+      --max-width:1100px;
+      --gap:1.25rem;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg) 0%, #1d3a76 100%);
+      color:#e6eef6;
+      padding:2rem 1rem;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+
+    .container{width:100%;max-width:var(--max-width);margin:0 auto}
+
+    .site-header{margin-bottom:1.25rem}
+    .site-header h1{margin:0;font-size:1.75rem;letter-spacing:-0.5px}
+    .lead{color:var(--muted);margin-top:0.35rem}
+
+    .lab-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:var(--gap);
+      align-items:start;
+      margin-top:1rem;
+    }
+
+    .lab-card{
+      background:linear-gradient(180deg,var(--card), rgba(11,18,32,0.8));
+      border-radius:var(--radius);
+      box-shadow:0 6px 18px rgba(2,6,23,0.6);
+      overflow:hidden;
+      transition:transform .22s cubic-bezier(.2,.9,.3,1),box-shadow .22s;
+      display:flex;
+      flex-direction:column;
+      min-height:220px;
+      outline: none;
+    }
+
+    
+    .lab-link{display:block;color:inherit;text-decoration:none;flex:1}
+
+    .lab-footer{
+      padding:0.75rem 1rem 1rem;display:flex;gap:0.5rem;align-items:center;
+      justify-content:flex-end;border-top:1px solid rgba(255,255,255,0.02);
+      background:linear-gradient(180deg,transparent,rgba(255,255,255,0.01));
+    }
+
+    .btn{
+      display:inline-block;padding:0.45rem 0.85rem;border-radius:10px;border:0;background:var(--accent);color:#042024;font-weight:600;text-decoration:none;font-size:0.95rem;cursor:pointer
+    }
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent);font-weight:600}
+
+
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Laboratórios</h1>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="lab-grid" aria-label="Lista de laboratórios">
+
+      
+      <article class="lab-card" tabindex="0">
+        <a class="lab-link" href="lab1/index.html" title="Abrir Laboratório 1">
+          
+          <div class="lab-body">
+            <h2 class="lab-title">Laboratório 1</h2>
+          </div>
+        </a>
+        <div class="lab-footer">
+          <a class="btn" href="lab1/index.html">Abrir</a>
+        </div>
+      </article>
+
+      <article class="lab-card" tabindex="0">
+        <a class="lab-link" href="lab2/index.html" title="Abrir Laboratório 2">
+          <div class="lab-body">
+            <h2 class="lab-title">Laboratório 2</h2>
+            
+          </div>
+        </a>
+        <div class="lab-footer">
+          <a class="btn" href="lab2/home.html">Abrir</a>
+        </div>
+      </article>
+
+      <article class="lab-card" tabindex="0">
+        <a class="lab-link" href="lab3/index.html" title="Abrir Laboratório 3">
+         
+          <div class="lab-body">
+            <h2 class="lab-title">Laboratório 3</h2>
+          </div>
+        </a>
+        <div class="lab-footer">
+          <a class="btn" href="lab3/index.html">Abrir</a>
+        </div>
+      </article>
+
+      <article class="lab-card" tabindex="0">
+          <div class="lab-body">
+            <h2 class="lab-title">Laboratório 4</h2>
+          </div>
+        </a>
+        <div class="lab-footer">
+          <a class="btn" href="lab4/index.html">Abrir</a>
+        </div>
+      </article>
+
+      <article class="lab-card" tabindex="0">
+        <a class="lab-link" href="lab5/index.html" title="Abrir Laboratório 5">
+          <div class="lab-body">
+            <h2 class="lab-title">Laboratório 5</h2>
+          </div>
+        </a>
+        <div class="lab-footer">
+          <a class="btn" href="lab5/index.html">Abrir</a>
+        </div>
+      </article>
+
+      <article class="lab-card" tabindex="0">
+        <a class="lab-link" href="lab6/index.html" title="Abrir Laboratório 6">
+          <div class="lab-body">
+            <h2 class="lab-title">Laboratório</h2>
+          </div>
+        </a>
+        <div class="lab-footer">
+          <a class="btn" href="lab6/index.html">Abrir</a>
+        </div>
+      </article>
+
+      <article class="lab-card" tabindex="0">
+        <a class="lab-link" href="lab7/index.html" title="Abrir Laboratório 7">
+          <div class="lab-body">
+            <h2 class="lab-title">Laboratório 7</h2>
+          </div>
+        </a>
+        <div class="lab-footer">
+          <a class="btn" href="lab7/index.html">Abrir</a>
+        </div>
+      </article>
+
+  </main>
+
+  <script>
+
