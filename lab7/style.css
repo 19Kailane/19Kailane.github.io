@@ -185,6 +185,28 @@ button.btn-finalizar:hover {
   border: 1px solid #ccc;
 }
 
+body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    .box {
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+    }
 
+#filtros {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+}
 
 

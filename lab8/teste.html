@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        
+        let counter = 0;
+        function count(){
+            counter++;
+            alert(counter);
+            document.querySelector('h1').innerHTML = counter;
+        }
+      
+        document.querySelector('form').onsubmit = () => {
+        value;
+        document.querySelector('#frase').textContent = `Olá,${nome}!`;
+        return false;
+    };
+
+    const hello = document.querySelector("#hello")
+    document.querySelector('#red').onclick = function(){
+        hello.style.color = "red";
+    }
+   document.querySelector('#green').onclick = function(){
+        hello.style.color = "green";
+    }
+    document.querySelector('#blue').onclick = function(){
+        hello.style.color = "blue";
+    }
+
+    document.querySelectorAll('button').forEach(function(button) {
+        button.onclick = function (){
+            hello.style.color = button.dataset.color;
+        }
+    })
+
+    function count() {
+        span.innerHTML = --counter;
+    }
+    if(counter == 0){
+        clearInterval(invervalId);
+        span.innerHTML ="terminou"
+    }
+         
+    </script>
+ 
+ <!-- Este é o meu css para poder colorir as coisas na pagina de teste-->
+<style>
+    body {
+        background-color: burlywood;
+    }
+</style>
+
+
+</head>
+
+<body>
+   
+    <!--Aqui esta o button e o Titulo -->
+    <h1> contagem vai até no 10!</h1>
+    <button onclick="count()"> conta </button>
+
+    <h2 id="hello">colori-me!</h2>
+    <input type="text">
+
+    <select>
+        <option value="indigo">indigo</option>
+        <option value="dodgerblue">dodgerblue</option>
+        <option value="salmom">salmom</option>
+    </select>
+
+    
+    <form>
+        <input id="nome" placeholder="nome" type="text" >
+        <input type="submit">
+    </form>
+
+    <!--Dados de varios bottons-->
+    <h3 id="hello">Hello</h3>
+    <button id="red">Vermelho</button>
+    <button id="blue">Azul</button>
+    <button id="green">Verde</button>
+
+    <!-- Aqui esta toda a informaçao basicamente do meu teste-->
+    <section>
+        <main>
+            <h1>Informações</h1>
+            <p>Bemvindo a esta página</p>
+        </main>
+    </section>
+
+    <header>
+        <h2>Titulo da pagina</h2>
+    </header>
+
+    <ul>
+        <li> para obter:
+            <ul>
+                <li> 
+                    café
+                    <li>
+                        agua
+                    </li>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Sobre</a></li>
+        </ul>
+       
+    </nav>
+
+
+    <!--Estes sao os dados da minha mini tabela-->
+    <table border="2">
+        <tr>
+            <th>Ano</th>
+            <th rowspan="5">Género</th>
+        </tr>
+
+         <tr>
+            <td>lisboa</td>
+            <td colspan="2" rowspan="4">adélcia</td>
+         </tr>
+    </table>
+
+
+    <article>
+        <footer>
+            <p>Rodapé do artigo</p>
+        </footer>
+    </article>
+</body>
+
+
+</html>
